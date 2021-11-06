@@ -1,4 +1,3 @@
-# Group-Project
 In progress
 # Prediction of canceling hotel reservations
 ## Overview of the Project
@@ -25,14 +24,17 @@ The outcome of this project can be used by hotel owners. In the following, there
 <br>
  
 ## Statistical Analysis
+
 <br>
 
 ## Machine learning
+
 <br>
 
 ## Conclusions
+
 <br>
 
-## Collaborators  
-Elnaz Pouranbarani, Mahtab Amiri, Nikhil Mahadeshwar, Saurabh Patel, Snigdha Kunda  <br>
+## Collaborators and Communication Protocols 
+
 
