@@ -25,6 +25,7 @@ This model establishes the outcome based on the predictions of the decision tree
 ### 3. Ensemble classifier (Ensemble) - Fields: ["deposit_type", "lead_time", "adr"(Average Daily Rate)]
 Ensemble classifier is a machine learning technique that utilizes the combination of various ML models in order to generate a most robust and optimal prediction model. 
 
+## Conclusion
 Hence, the cancellation of hotel bookings can be predicted with utmost precision using the models listed above.
 The features of these models namely average daily rate (adr) and arrival_date are taken as key factors for our evaluation.
 
