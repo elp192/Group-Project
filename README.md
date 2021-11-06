@@ -37,4 +37,9 @@ The outcome of this project can be used by hotel owners. In the following, there
 
 ## Collaborators and Communication Protocols 
 
+- Elnaz Pouranbarani  
+- Saurabh Patel  
+- Mahtab Amiri  
+- Nikhil Mahadeshwar  
+- Snigdha Kundu  
 
