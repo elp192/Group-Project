@@ -26,7 +26,8 @@ The outcome of this project can be used by hotel owners. In the following, there
 
 - used PGadmin and postgres to store data 
 - created table hotel_booking and imported data from csv 
-  
+- SQL script for the table created
+
 <br>
  
 ## Statistical Analysis
