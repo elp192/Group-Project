@@ -24,6 +24,9 @@ The outcome of this project can be used by hotel owners. In the following, there
 
 ## Data Processing (Extract, Transform, Load)
 
+- used PGadmin and postgres to store data 
+- created table hotel_booking and imported data from csv 
+  
 <br>
  
 ## Statistical Analysis
