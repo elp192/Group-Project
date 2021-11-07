@@ -19,6 +19,9 @@ The outcome of this project can be used by hotel owners. In the following, there
   - Dashboard: Tableau.
 <br>
 
+## E-R Diagram
+<br>
+
 ## Data Processing (Extract, Transform, Load)
 
 <br>
