@@ -62,9 +62,9 @@ The dataset of City Hotel and Resort Hotel contains booking information and foll
 
 ## Data Processing (Extract, Transform, Load)
 
-- used PGadmin and postgres to store data 
-- created table hotel_booking and imported data from csv 
-- SQL script for the table created
+- PGadmin and postgres were used to store data 
+- Created table hotel_booking and imported data from csv 
+- SQL script for the table was created
 
 <br>
  
