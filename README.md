@@ -17,6 +17,7 @@ The dataset of City Hotel and Resort Hotel contains booking information and foll
 |    Company                   |     Integer   |ID of the company/entity that made the booking or responsible for paying the booking
 |    Country                   |     Integer   |Country of origin
 |    CustomerType              | Categorical   |Type of booking, assuming one of four categories:Contract - when the booking has an allotment or other type of contract associated to it;Group – when the booking is associated to a group;Transient – when the booking is not part of a group or contract, and is not associated to other transient booking;Transient-party – when the booking is transient, but is associated to at least other transient booking
+| DaysInWaitingList            | Integer       |Number of days the booking was in the waiting list before it was confirmed to the customer
 |   DepositType                | Categorical   |Indication on if the customer made a deposit to guarantee the booking. This variable can assume three categories:No Deposit – no deposit was made;Non Refund – a deposit was made in the value of the total stay cost;Refundable – a deposit was made with a value under the total cost of stay.
 |DistributionChannel           | Categorical   |Booking distribution channel. The term “TA” means “Travel Agents” and “TO” means “Tour Operators”
 |IsCanceled                    | Categorical   |Value indicating if the booking was canceled (1) or not (0)
