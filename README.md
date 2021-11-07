@@ -10,7 +10,7 @@ The dataset of City Hotel and Resort Hotel contains booking information and foll
 |     ArrivalDateMonth         |     Integer   |Month of arrival date with 12 categories: “January” to “December”
 |     ArrivalDateWeekNumber    |     Integer   |Week number of the arrival date
 |     ArrivalDateYear          |     Integer   |Year of arrival date
-|     AssignedRoomType         |  Categorical  |Code for the type of room assigned to the booking. Sometimes the assigned room type differs from the reserved room         type due to hotel operation reasons (e.g. overbooking) or by customer request. Code is presented instead of designation for anonymity reasons
+|     AssignedRoomType         |  Categorical  |Code for the type of room assigned to the booking.
 |     Babies                   |     Integer   |Number of babies
 |    BookingChanges            |     Integer   |Number of changes made to the booking from the moment the booking was entered 
 |     Children                 |     Integer   |Number of children
