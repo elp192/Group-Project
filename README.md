@@ -20,7 +20,9 @@ The outcome of this project can be used by hotel owners. In the following, there
 <br>
 # Data Description and Process Flow Diagram
 The dataset of City Hotel and Resort Hotel contains booking information and following information: booking date, length of stay, no of adults, children, babies and the parking availability. The datasets has the same structure, with 32 variables describing the 119391 observations. Each observation represents the hotel booking and the datasets comprehend bookings due to the arrive between the 1st of July of 2015 and the 31st of August 2017. It includes bookings that effectively arrived and bookings that were canceled. 
+
 ![alt text](https://github.com/nikmahadeshwar/group-project/blob/main/Business%20process%20flow%20example-3.jpeg)
+
 |            Variable          |     Type      |         Description
 | ---------------------------- | ------------- |------------------------------
 |     ADR                      |    Numeric    |Average Daily Rate as defined
@@ -54,8 +56,6 @@ The dataset of City Hotel and Resort Hotel contains booking information and foll
 |StaysInWeekendNights          |Integer        |Number of weekend nights (Saturday or Sunday) the guest stayed or booked to stay at the hotel
 |StaysInWeekNights             |Integer        |Number of week nights (Monday to Friday) the guest stayed or booked to stay at the hotel
 |TotalOfSpecialRequests        |Integer        |Number of special requests made by the customer (e.g. twin bed or high floor)
-
-
 
 
 ## Data Processing (Extract, Transform, Load)
