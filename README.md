@@ -74,20 +74,19 @@ The following processes are done for data processing :
 <br>
 
 ## Machine Learning
-### Problem
-In this project, we are trying to predict the probability of a booked reservation being cancelled using the historic data collected of the hotel reservations. There are 2 outcomes expected(0 or 1) initially, with 2 attributes into account, which are mainly the "hotel" and "reservation_status".
+In this project, we are trying to predict the probability of a booked reservation being cancelled using the historic data collected of the hotel reservations. There are 2 outcomes expected (0 or 1) initially, with 2 attributes into account, which are mainly the ```hotel``` and ```reservation_status```.
 
 
 ### Model Selection with the probable attributes used as Input to the model
-#### 1. Logistic Regression (Regression) - Fields: ["arrival_date_week_number", "arrival_date_month", "deposit_type"]
+#### 1. Logistic Regression (Regression) - Fields: [```arrival_date_week_number```, ```arrival_date_month```, ```deposit_type```]
 Logistic regression is a type of supervised learning classification algorithm which is used for predicting the probability of a target variable. The nature of target or dependent variable is binary, which means there can be only two classes. The variable"deposit_type" contains two types of observations - which is either "no deposit" or "non-refundable".
 
-#### 2. Random Forest (Tree-based) - Fields: ["total_of_special_requests", "deposit_type", "lead_time"]
+#### 2. Random Forest (Tree-based) - Fields: [```total_of_special_requests```, ```deposit_type```, ```lead_time```]
 Random Forest is a machine learning algorithm which is used to solve problems related to regression and classification. It uses the Ensemble learning technique which solves complexity of the problems by the combination of classifiers, thus, improving the accuracy.
 
 This model establishes the outcome based on the predictions of the decision trees by calculating the average or mean of the output from different decision trees. It works on the principle which inculcates that the precision of the model outcome is directly proportional to the number of decision trees, thus reduces the overfitting of datasets. It also provides an effective method to deal with missing data.
 
-#### 3. Ensemble classifier (Ensemble) - Fields: ["deposit_type", "lead_time", "adr"(Average Daily Rate)]
+#### 3. Ensemble classifier (Ensemble) - Fields: [```deposit_type```, ```lead_time```, ```adr```(Average Daily Rate)]
 Ensemble classifier is a machine learning technique that utilizes the combination of various ML models in order to generate a more robust and optimal prediction model.
 
 ### Conclusion
