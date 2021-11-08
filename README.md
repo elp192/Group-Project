@@ -7,7 +7,7 @@ The outcome of this project can be used by hotel owners. In the following, there
 - The model helps the finance department in estimation for hotel revenue.<br>
 
 ## Tools and Resources
-- [Data](https://github.com/elp192/Hotel-Reservation/blob/d47b91009c9f1c52add774d48e8972680fc33d43/hotel_reservations.csv): <br>Data consists of 119,391 rows (instances) and 32 columns which includes but not limited to:<br>
+- [Data](https://github.com/elp192/Hotel-Reservation/blob/d47b91009c9f1c52add774d48e8972680fc33d43/hotel_reservations.csv): <br>Data is extracted from Kaggle.com open source and consists of 119,391 rows (instances) and 32 columns which includes but not limited to:<br>
 ```hotel```, ```is_canceled```(the hotel is canceled or not),```lead_time``` (the number of days that the hotel booked in advance),  ```arrival_date_year```, ```arrival_date_month```, ```arrival_date_week_number```, ```arrival_date_day_of_month```,```stays_in_weekend_nights```, ```stays_in_week_nights```, ```adults``` (number of adults), ```market_segment```(categories: TA (travel agents) and TO (tour operations), ```distribution_channel```(categories: TA and TO), ```adr```(average daily rate) and etc.
 
 - Tools:
