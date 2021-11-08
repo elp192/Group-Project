@@ -7,9 +7,8 @@ The outcome of this project can be used by hotel owners. In the following, there
 - The model helps the finance department in estimation for hotel revenue.<br>
 
 ## Tools and Resources
-- [Data](https://github.com/elp192/Hotel-Reservation/blob/d47b91009c9f1c52add774d48e8972680fc33d43/hotel_reservations.csv): Data consists of 119391 rows (instances) and 32 columns which includes but not limited to:<br>
-```hotel```, ```is_canceled```(the hotel is canceled or not),```lead_time``` (the number of days that the hotel booked in advance), ```arrival_date_year```,```arrival_date_month```, ```arrival_date_week_number
-```, ```arrival_date_day_of_month```,```stays_in_weekend_nights```,```stays_in_week_nights```, ```adults``` (number of adults), ```market_segment```(categories: TA (travel agents) and TO (tour operations), ```distribution_channel```(categories: TA and TO), ```adr```(average daily rate) and etc., 
+- [Data](https://github.com/elp192/Hotel-Reservation/blob/d47b91009c9f1c52add774d48e8972680fc33d43/hotel_reservations.csv): <br>Data consists of 119,391 rows (instances) and 32 columns which includes but not limited to:<br>
+```hotel```, ```is_canceled```(the hotel is canceled or not),```lead_time``` (the number of days that the hotel booked in advance),  ```arrival_date_year```, ```arrival_date_month```, ```arrival_date_week_number```, ```arrival_date_day_of_month```,```stays_in_weekend_nights```, ```stays_in_week_nights```, ```adults``` (number of adults), ```market_segment```(categories: TA (travel agents) and TO (tour operations), ```distribution_channel```(categories: TA and TO), ```adr```(average daily rate) and etc.
 
 - Tools:
   - Language: Python - codes are written in Jupyter Notebook.
@@ -17,13 +16,9 @@ The outcome of this project can be used by hotel owners. In the following, there
   - Database: PostgreSQL.
   - Machine learning: Supervised learning, Logistic regression, Random Forest, Deep learning (probably).
   - Dashboard: Tableau.
-<br>
+## Data Description and Process Flow Diagram
 
-# Data Description and Process Flow Diagram
-
-The dataset of City Hotel and Resort Hotel contains booking information as well as the following information: booking date, length of stay, no. of adults, children, babies and parking availability. The dataset has the same structure, with 32 variables describing 119,391 observations. Each observation represents the hotel booking and the datasets comprehend bookings due to arrival between July 1, 2015 and August 31, 2017. It includes bookings that showed up and bookings that were canceled. 
-
-![alt text](https://github.com/nikmahadeshwar/group-project/blob/main/Business%20process%20flow%20example-3.jpeg)
+The following table depicts the type and description of each variable used in the dataset: 
 
 |            Variable          |     Type      |         Description
 | ---------------------------- | ------------- |------------------------------
@@ -59,31 +54,29 @@ The dataset of City Hotel and Resort Hotel contains booking information as well 
 |StaysInWeekNights             |Integer        |Number of week nights (Monday to Friday) the guest stayed or booked to stay at the hotel
 |TotalOfSpecialRequests        |Integer        |Number of special requests made by the customer (e.g. twin bed or high floor)
 
-
-## Data Processing (Extract, Transform, Load)
-
-- PGadmin and postgres were used to store data 
-- Created table hotel_booking and imported data from csv 
-- SQL script for the table was created
-
-<br>
- 
-## Statistical Analysis
-
-<br>
-
-## Machine learning
-### Problem
-The hotels need to confirm booking reservations to customers, keeping in mind, the ascertainity of the rooms being booked for actual reservation as well as the reservation status being cancelled when a customer cancels or rather doesn't get onboard with no-show. Booking cancellations negatively contribute to hotel revenue.
-
-In this project, we are trying to predict the probability of a booked reservation being cancelled using the historic data collected of the hotel reservations. There are 2 outcomes expected(0 or 1) initially, with 2 attributes into account, which are mainly the "hotel" and "reservation_status".
-
-### Preprocessing
+The hotel reservation flow diagram is also shown below:
+![alt text](https://github.com/nikmahadeshwar/group-project/blob/main/Business%20process%20flow%20example-3.jpeg)
+## Data Preprocessing
 The preprocessing of the data includes:
 
 <li>Removal of the observations with null values in any attribute</li>
 <li>Conversion of nominal and ordinal variables to integers</li>
-<li>Removal of the features with highest null value observations</li>
+<li>Removal of the features with highest null value observations</li>  
+
+## Data Processing (Extract, Transform, Load)
+The following processes are done for data processing : 
+- PGadmin and postgres are used to store data 
+- Table hotel_booking is created and imported data from csv 
+- SQL script for the table is created
+
+ ## Statistical Analysis
+(To be conducted later)
+<br>
+
+## Machine Learning
+### Problem
+In this project, we are trying to predict the probability of a booked reservation being cancelled using the historic data collected of the hotel reservations. There are 2 outcomes expected(0 or 1) initially, with 2 attributes into account, which are mainly the "hotel" and "reservation_status".
+
 
 ### Model Selection with the probable attributes used as Input to the model
 #### 1. Logistic Regression (Regression) - Fields: ["arrival_date_week_number", "arrival_date_month", "deposit_type"]
@@ -102,10 +95,10 @@ Hence, the cancellation of hotel bookings can be predicted with utmost precision
 <br>
 
 ## Final Conclusions
-
+(To be done later)
 <br>
 
-## Collaborators and Communication Protocols 
+## Collaborators 
 
 - Elnaz Pouranbarani  
 - Saurabh Patel  
