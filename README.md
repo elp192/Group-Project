@@ -97,7 +97,7 @@ Hence, the cancellation of hotel bookings can be predicted with utmost precision
 (To be done later)
 <br>
 
-## Collaborators 
+## Collaborators and Communication Protocols 
 
 - Elnaz Pouranbarani  
 - Saurabh Patel  
