@@ -104,4 +104,4 @@ Hence, the cancellation of hotel bookings can be predicted with utmost precision
 - Mahtab Amiri  
 - Nikhil Mahadeshwar  
 - Snigdha Kundu  
-
+Our team communicates via messaging in Slack. We also have regular zoom meetings at least twice a week to discuss project status and clarify each member's responsibilities.
