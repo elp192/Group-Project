@@ -36,3 +36,6 @@ The dataset of City Hotel and Resort Hotel contains booking information and foll
 |TotalOfSpecialRequests        |Integer        |Number of special requests made by the customer (e.g. twin bed or high floor)
 
 
+Prediction of Hotel Bookings Cancellation using hyperparameter optimization on Random Forest algorithm
+
+Booking cancellations by customers greatly affect hotel managerial decisions. To minimize losses caused by this problem, hotel management made a fairly rigid policy that could ruin the reputation of the hotel and the hotel's business performance. Therefore, this research focuses on solving the problem using machine learning algorithms. In order to obtain the best performance from the random forest algorithm, hyperparameter optimization is applied. The goal is to obtain the best combination of model parameters for hotel cancellation predictions. The proposed model has the best performance with best accuracy results, which can be used as a model component in hotel managerial decision-making systems related to cancellation of future reservations.
