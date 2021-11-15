@@ -35,6 +35,12 @@ The dataset of City Hotel and Resort Hotel contains booking information and foll
 |StaysInWeekNights             |Integer        |Number of week nights (Monday to Friday) the guest stayed or booked to stay at the hotel
 |TotalOfSpecialRequests        |Integer        |Number of special requests made by the customer (e.g. twin bed or high floor)
 
+## Random Forest for Predicting City Hotel Booking Cancellation
+
+
+
+
+
 
 ## Prediction of Hotel Bookings Cancellation using hyperparameter optimization on Random Forest algorithm
 
