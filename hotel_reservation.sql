@@ -1,0 +1,36 @@
+--Drop Table hotel_reservations;
+CREATE TABLE hotel_reservations (
+       hotel TEXT NOT NULL,
+       is_canceled BOOL NOT NULL,
+       lead_time INTEGER NOT NULL,
+	   arrival_date_year INTEGER NULL,
+	   arrival_date_month VARCHAR(40) NOT NULL,
+	   arrival_date_week_number INTEGER NOT NULL,
+	   arrival_date_day_of_month INTEGER NOT NULL,
+	   stays_in_weekend_nights INTEGER NOT NULL,
+	   stays_in_week_nights INTEGER NOT NULL,
+	   adults INTEGER NOT NULL,
+	   children VARCHAR(40) NULL,
+	   babies INTEGER NOT NULL,
+	   meal VARCHAR(40) NOT NULL,
+	   country VARCHAR(40) NOT NULL,
+	   market_segment VARCHAR(40) NOT NULL,
+	   distribution_channel VARCHAR(40) NOT NULL,
+	   is_repeated_guest BOOL,
+	   previous_cancellations INTEGER NULL,
+	   previous_bookings_not_canceled INTEGER NULL,
+	   reserved_room_type VARCHAR(40) NULL,
+	   assigned_room_type VARCHAR(40) NOT NULL,
+	   booking_changes INTEGER NOT NULL,
+	   deposit_type VARCHAR(40) NOT NULL,
+	   --agent INTEGER NULL,
+	   --company INTEGER NULL,
+	   days_in_waiting_list INTEGER NUll,
+	   customer_type VARCHAR(40) NOT NULL,
+	   adr decimal NOT NULL,
+	   required_car_parking_spaces INTEGER NOT NULL,
+	   reservation_status VARCHAR(40) NULL,
+	   reservation_status_date date NOT NULL
+); 
+
+SELECT * FROM hotel_reservations
