@@ -12,9 +12,9 @@ The outcome of this project can be used by hotel owners. In the following, there
 
 - Tools:
   - Language: Python - codes are written in Jupyter Notebook.
-  - Libraries: Pandas, Matplotlib, Sckiti-learn, TensorFlow (probably).
+  - Libraries: Pandas, Matplotlib, Sckiti-learn, TensorFlow.
   - Database: PostgreSQL.
-  - Machine learning: Supervised learning, Logistic regression, Random Forest, Deep learning (probably).
+  - Machine learning: Supervised learning, Logistic regression, Random Forest, Deep learning.
   - Dashboard: Tableau.
 ## Data Description and Process Flow Diagram
 
@@ -58,36 +58,50 @@ The hotel reservation flow diagram is also shown below:
 ![alt text](https://github.com/nikmahadeshwar/group-project/blob/main/Business%20process%20flow%20example-3.jpeg)
 ## Data Preprocessing
 The preprocessing of the data includes:
+- Removal of the observations with null values in any attribute.<br>
+- Removal of the features with highest null value observations.<br>  
+- Removal of duplicated rows.<br>
 
-<li>Removal of the observations with null values in any attribute</li>
-<li>Conversion of nominal and ordinal variables to integers</li>
-<li>Removal of the features with highest null value observations</li>  
-
-## Data Processing (Extract, Transform, Load)
-The following processes are done for data processing : 
-- PGadmin and postgres are used to store data 
-- Table hotel_booking is created and imported data from csv 
-- SQL script for the table is created
+## Data Processing 
+The following processes are done for data processing: 
+- PgAdmin and postgress are used to store data.
+- Table hotel_booking is created and imported data from csv.
+- SQL script for the table is created.
 
  ## Statistical Analysis
-(To be conducted later)
+(In progress)
 <br>
 
 ## Machine Learning
-In this project, we are trying to predict the probability of a booked reservation being cancelled using the historic data collected of the hotel reservations. There are 2 outcomes expected (0 or 1) initially, with 2 attributes into account, which are mainly the ```hotel``` and ```reservation_status```.
+In this project, we are trying to predict the probability of a booked reservation being cancelled using the historic data collected of the hotel reservations. There are 2 outcomes expected (0 or 1).
 
+### Preprocessing
+- Split reservation_status_date to day, month and year.<br>
+- Separate the categorical variables from others.<br>
+- Replace null values by "undefined" in categorical variables and by zero in other variables.<br>
+- Applied ordinalencoder on categorical variables.<br>
 
-### Model Selection with the probable attributes used as Input to the model
-#### 1. Logistic Regression (Regression) - Fields: [```arrival_date_week_number```, ```arrival_date_month```, ```deposit_type```]
-Logistic regression is a type of supervised learning classification algorithm which is used for predicting the probability of a target variable. The nature of target or dependent variable is binary, which means there can be only two classes. The variable"deposit_type" contains two types of observations - which is either "no deposit" or "non-refundable".
+### Model 
+First, train-test split procedure is applied on dataset (75% training and 25% test). The following machine learning methods are used:<br>
+1. **Logistic Regression (Regression)** - Fields: [```arrival_date_week_number```, ```arrival_date_month```, ```deposit_type```]<br>
+  Logistic regression is a type of supervised learning classification algorithm which is used for predicting the probability of a target variable. The nature of target or dependent variable is binary, which means there can be only two classes. The variable"deposit_type" contains two types of observations - which is either "no deposit" or "non-refundable".
 
-#### 2. Random Forest (Tree-based) - Fields: [```total_of_special_requests```, ```deposit_type```, ```lead_time```]
-Random Forest is a machine learning algorithm which is used to solve problems related to regression and classification. It uses the Ensemble learning technique which solves complexity of the problems by the combination of classifiers, thus, improving the accuracy.
+2. **Neural Network**<br>
+**Compiling, Training, and Evaluating the model**
+   - The two hidden layers are used for the neural network model. The first and second hidden layers contain 100 and 50 neurons, respectively. The output layer contains a single neuron (binary classification problem).
+   - The relu activation function is used for hidden layers as it provides better accuracy. For the output layer, the sigmoid function is used.
+   - The model is trained using 100 epochs.
+   - The binary cross entropy is used for the loss function as this function is appropriate for binary classification.
+   - The adam optimizer is used as an optimizer.
+   - To evaluate the machine learning algorithm the 10-fold cross-validation is used.
+   - The accuracy of 93% is obtained from our deep learning model.
 
+3. **Random Forest (Tree-based) (In progress)**<br>
+  Random Forest is a machine learning algorithm which is used to solve problems related to regression and classification. It uses the Ensemble learning technique which solves complexity of the problems by the combination of classifiers, thus, improving the accuracy.<br>
 This model establishes the outcome based on the predictions of the decision trees by calculating the average or mean of the output from different decision trees. It works on the principle which inculcates that the precision of the model outcome is directly proportional to the number of decision trees, thus reduces the overfitting of datasets. It also provides an effective method to deal with missing data.
 
-#### 3. Ensemble classifier (Ensemble) - Fields: [```deposit_type```, ```lead_time```, ```adr```(Average Daily Rate)]
-Ensemble classifier is a machine learning technique that utilizes the combination of various ML models in order to generate a more robust and optimal prediction model.
+4. **Ensemble classifier (Ensemble)(In progress)**<br>
+  Ensemble classifier is a machine learning technique that utilizes the combination of various ML models in order to generate a more robust and optimal prediction model.
 
 ### Conclusion
 Hence, the cancellation of hotel bookings can be predicted with utmost precision using the models described above. The features of these models namely average daily rate (adr) and arrival_date are taken as key factors for the is_cancelled attribute prediction for our evaluation.
