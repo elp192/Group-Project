@@ -63,6 +63,9 @@ The preprocessing of the data includes:
 - Removal of duplicated rows.<br>
 
 ## Data Processing 
+
+work in progress :
+
 The following processes are done for data processing: 
 - PgAdmin and postgress are used to store data.
 - Table hotel_booking is created and imported data from csv.
