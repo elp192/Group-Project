@@ -61,6 +61,7 @@ The preprocessing of the data includes:
 - Removal of the observations with null values in any attribute.<br>
 - Removal of the features with highest null value observations.<br>  
 - Removal of duplicated rows.<br>
+- Ensuring that data types are in correct form. <br>
 
 ## Data Processing 
 
