@@ -121,7 +121,7 @@ First, train-test split procedure is applied on dataset (75% training and 25% te
         accuracy_score(y_test, predictions)
 
     #### Conclusion:
-    The model performance initially came out to be 98%, proving to be overfitting, therefore, after making effective use of the model with recursive feature elimination, made the model come down to approxiamately 91%, which was neither overfitting nor under-fitting.
+    The model performance initially came out to be 98%, proving to be overfitting, therefore, after making effective use of the model with recursive feature elimination, made the model come down to approxiamately 94%, which was neither overfitting nor under-fitting.
 
 2. **Neural Network**<br>
 **Compiling, Training, and Evaluating the model**
