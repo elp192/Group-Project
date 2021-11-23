@@ -17,6 +17,40 @@ The preprocessing of the data includes:
 ### 1. Logistic Regression (Regression) - Fields: ["arrival_date_week_number", "arrival_date_month", "deposit_type"]
 Logistic regression is a type of supervised learning classification algorithm which is used for predicting the probability of a target variable. The nature of target or dependent variable is binary, which means there can be only two classes. The variable"deposit_type" contains two types of observations - which is either "no deposit" or "non-refundable".
 
+#### Splitting Data into Training (70%) and Test (30%) Sets
+We make training and test sets to make sure that after we train our classification algorithm, it is able to generalize well to new data
+
+     from sklearn.model_selection import train_test_split
+     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0, test_size=0.3)
+
+#### Import the model you want to use
+from sklearn.linear_model import LogisticRegression
+
+#### Make an instance of the Model
+classifier = LogisticRegression()
+
+#### Applying Recursive Feature Elimination (RFE)
+The RFE function is used for eliminating the less important features which do not contribute towards the context of the prediction.
+
+import statsmodels.api as sm
+from sklearn.feature_selection import RFE
+rfe = RFE(classifier, 20)
+rfe = rfe.fit(X, y.values.ravel())
+
+#### Training the model on the data, storing the information learned from the data
+classifier.fit(X_train, y_train)
+
+#### Making predictions on the test data
+predictions = classifier.predict(X_test)
+pd.DataFrame({"Prediction": predictions, "Actual": y_test})
+
+#### Measuring Model Performance
+from sklearn.metrics import accuracy_score
+accuracy_score(y_test, predictions)
+
+#### Conclusion:
+The model performance initially came out to be 98%, proving to be overfitting, therefore, after making effective use of the model with recursive feature elimination, made the model come down to approxiamately 91%, which was neither overfitting nor under-fitting.
+
 ### 2. Random Forest (Tree-based) - Fields: ["total_of_special_requests", "deposit_type", "lead_time"]
 Random Forest is a machine learning algorithm which is used to solve problems related to regression and classification. It use the Ensemble learning technique which solves complexity of the problems by the combination of classifiers, thus, improving the accuracy.
 
