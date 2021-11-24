@@ -159,6 +159,4 @@ Hence, the cancellation of hotel bookings can be predicted with utmost precision
 Our team communicates via messaging in Slack. We also have regular zoom meetings at least twice a week to discuss project status and clarify each member's responsibilities.
 
 Presentation Link:
-Presentation Link:
-
 https://docs.google.com/presentation/d/1EV7a8vf5qAvJWqqaAbC-Qyj0sDApTnZGS-sbxHzDKdg/edit#slide=id.g101b7c7e2a2_0_228
