@@ -63,6 +63,32 @@ The preprocessing of the data includes:
 - Removal of duplicated rows.<br>
 - Ensuring that data types are in correct form. <br>
 
+## Exploratory Data Analysis
+### How Many Booking Were Cancelled?
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-27%20at%204.58.04%20PM.png)
+ 37% of the time bookings were canceled and 63% of the bookings were checkedin.
+ 
+### Which was the most booked accommodation type (Single, Couple, Family)?
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-27%20at%205.55.57%20PM.png)
+Couple (or 2 adults) is the most popular accommodation type. 
+
+### What is the percentage of booking for each year?
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-27%20at%205.00.05%20PM.png)
+
+Maximun number of bookings made in 2016, compared to the previous year. 
+
+### Which is the busiest month for hotels?
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-27%20at%205.00.26%20PM.png)
+The above graph depicts that most bookings were made from the month of July to August. On other hand least number of bookings were made at the start and end of the year.
+### How Long People Stay in the hotel?
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-27%20at%206.22.13%20PM.png)
+
+Most people stay for one, two, or three. More than 60% of guests come under these three options.
+
+### From which country most guests come?
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-27%20at%205.00.45%20PM.png)
+
+Above diagram describes that the top countries from where the guests arrive are Portugal, UK and France, Spain and Germany.
 ## Data Processing 
 
 work in progress :
