@@ -93,10 +93,20 @@ Above diagram describes that the top countries from where the guests arrive are 
 
 work in progress :
 
-The following processes are done for data processing: 
-- PgAdmin and postgress are used to store data.
-- Table hotel_booking is created and imported data from csv.
-- SQL script for the table is created.
+
+Cloud computing such as AMAZON WEB SERVICE(AWS) is the future for almost every aspect of business.
+AWS offers a wide variety of storage options on its platform,both structured and unstructured databases.Following are the steps to do that :
+
+ - Set up a Postgres database(database-1) using AWS's relational database service (RDS)
+ - After setting up your RDS there are some quick adjustments to the settings to make sure your database is available everywhere
+The reason why the Postgres database hosted on the cloud, so it can be accessed by anyone with credentials using whatever platform you prefer. 
+- Then connect with PGAdmin to create the table .
+- We use pandas library and sqlalchemy to create a function (dbexport.py)
+- Added all the configuration in (config.py)which is added in gitignore
+- now , we use hotel_df1_clean data to pass through the database .
+- This creates the csv file 
+
+
 
  ## Statistical Analysis
 (In progress)
