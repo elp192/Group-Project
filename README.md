@@ -1,6 +1,6 @@
-## Predicting Hotel Booking Cancellations
+# Predicting Hotel Booking Cancellations
 
-# Overview of the Project
+## Overview of the Project
 
 Annually hotels experience several cancellations, which has adverse impacts on hotel business and industry. In this project, factors influencing the hotel cancellations will be determined. Also, the prediction model predicts how many customers will cancel their reservations.
 The outcome of this project can be used by hotel owners. In the following, there are examples to reveal the applications of this project.
