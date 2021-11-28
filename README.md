@@ -202,7 +202,7 @@ We used Balanced Accuracy Score,precision score, recall score and  f1 score metr
 ![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.54.41%20PM.png)
 #### Metrics for Model
 ![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.56.15%20PM.png)
-A balanced accuarcy score of 0.79 implies that the model can correctly predict 79.51 % of the labels of each class.
+A balanced accuracy score of 0.79 implies that the model can correctly predict 79.51 % of the labels of each class.
 A precision score of 0.85 implies that of all the cases wherein the model predicted that the booking will be cancelled, 85% were identified correctly.
 A recall score of 0.83 implies that of all the cases wherein the booking was cancelled, the model correctly identified 83%.
 An F1 score of 0.83, is the weighted average of precision and recall. 
