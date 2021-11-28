@@ -1,3 +1,26 @@
+## Predicting Hotel Booking Cancellations
+
+# Overview of the Project
+
+Annually hotels experience several cancellations, which has adverse impacts on hotel business and industry. In this project, factors influencing the hotel cancellations will be determined. Also, the prediction model predicts how many customers will cancel their reservations.
+The outcome of this project can be used by hotel owners. In the following, there are examples to reveal the applications of this project.
+
+The model can improve the resource management of hotels.
+The model helps the finance department in estimation for hotel revenue.
+Tools and Resources
+
+## Data: 
+Data is extracted from Kaggle.com open source and consists of 119,391 rows (instances) and 32 columns which includes but not limited to:
+hotel, is_canceled(the hotel is canceled or not),lead_time (the number of days that the hotel booked in advance), arrival_date_year, arrival_date_month, arrival_date_week_number, arrival_date_day_of_month,stays_in_weekend_nights, stays_in_week_nights, adults (number of adults), market_segment(categories: TA (travel agents) and TO (tour operations), distribution_channel(categories: TA and TO), adr(average daily rate) and etc.
+
+# Tools:
+
+Language: Python - codes are written in Jupyter Notebook.
+Libraries: Pandas, Matplotlib, Sckiti-learn, TensorFlow.
+Database: PostgreSQL.
+Machine learning: Supervised learning, Logistic regression, Random Forest, Deep learning.
+Dashboard: Tableau.
+
 # Data Description and Process Flow
 The dataset of City Hotel and Resort Hotel contains booking information and following information: booking date, length of stay, no of adults, children, babies and the parking availability. The datasets has the same structure, with 32 variables describing the 119391 observations. Each observation represents the hotel booking and the datasets comprehend bookings due to the arrive between the 1st of July of 2015 and the 31st of August 2017. It includes bookings that effectively arrived and bookings that were canceled. 
 ![alt text](https://github.com/nikmahadeshwar/group-project/blob/main/Business%20process%20flow%20example-3.jpeg)
