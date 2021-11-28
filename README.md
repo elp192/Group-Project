@@ -62,14 +62,43 @@ Most people stay for one, two, or three. More than 60% of guests come under thes
 ![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-27%20at%205.00.45%20PM.png)
 
 Above diagram describes that the top countries from where the guests arrive are Portugal, UK and France, Spain and Germany.
+ 
+### Machine Learning using Random Forest Algorithm
+#### Import Libraries
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%2012.45.19%20PM.png)
+#### Load data
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.20.25%20PM.png)
+#### Extract Target
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.14.55%20PM.png)
+#### Converting Categorical variables to Numerical
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.29.45%20PM.png)
+#### Identify columns to drop
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.23.41%20PM.png)
+We dropped columns reservation_status,reservation_status_date, company and agent as they conatain missing values and are not useful.
+#### Split the data into train and test datasets
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.31.17%20PM.png)
+We set the random_state variable to 42 to ensure reproducibility of results.
+#### Build categorical and continuous pipelines
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.35.41%20PM.png)
+#### Build pipeline
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.38.37%20PM.png)
+#### Initialize the search space for model hyperparameters
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.40.15%20PM.png)
+#### Initialize the metrics used for scoring
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.44.24%20PM.png)
+We used Balanced Accuracy Score,precision score, recall score and  f1 score metric to determine the score of classification model as it captures recall of each class in single metric and accounts for imbalance in data.
+#### Fit model
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.46.13%20PM.png)
+#### Print best hyperparameters
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.47.58%20PM.png)
+#### Fit the model on training data
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.50.51%20PM.png)
+#### Predict using test dataset
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.54.41%20PM.png)
+#### Metrics for Model
+![alt text](https://github.com/elp192/Hotel-Reservation/blob/Final_project/nikmahadeshwar/Screen%20Shot%202021-11-28%20at%201.56.15%20PM.png)
+A balanced accuarcy score of 0.79 implies that the model can correctly predict 79.51 % of the labels of each class.
+A precision score of 0.85 implies that of all the cases wherein the model predicted that the booking will be cancelled, 85% were identified correctly.
+A recall score of 0.83 implies that of all the cases wherein the booking was cancelled, the model correctly identified 83%.
+An F1 score of 0.83, is the weighted average of precision and recall. 
 
-## Random Forest for Predicting City Hotel Booking Cancellation
-
-
-
-
-
-
-## Prediction of Hotel Bookings Cancellation using hyperparameter optimization on Random Forest algorithm
-
-Booking cancellations by customers greatly affect hotel managerial decisions. To minimize losses caused by this problem, hotel management made a fairly rigid policy that could ruin the reputation of the hotel and the hotel's business performance. Therefore, this research focuses on solving the problem using machine learning algorithms. In order to obtain the best performance from the random forest algorithm, hyperparameter optimization is applied. The goal is to obtain the best combination of model parameters for hotel cancellation predictions. The proposed model has the best performance with best accuracy results, which can be used as a model component in hotel managerial decision-making systems related to cancellation of future reservations.
