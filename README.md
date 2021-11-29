@@ -102,12 +102,6 @@ The reason why the Postgres database hosted on the cloud, so it can be accessed 
 - now , we use hotel_df1_clean data to used to run through codes and genrate the SQL table 
 - This creates the csv file 
 
-
-
- ## Statistical Analysis
-(In progress)
-<br>
-
 ## Machine Learning
 In this project, we are trying to predict the probability of a booked reservation being cancelled using the historic data collected of the hotel reservations. There are 2 outcomes expected (0 or 1).
 
@@ -115,10 +109,10 @@ In this project, we are trying to predict the probability of a booked reservatio
 - Split reservation_status_date to day, month and year.<br>
 - Separate the categorical variables from others.<br>
 - Replace null values by "undefined" in categorical variables and by zero in other variables.<br>
-- Applied ordinalencoder on categorical variables.<br>
+- Applied OneHotEncoder on categorical variables.<br>
 
-### Model 
-First, train-test split procedure is applied on dataset (75% training and 25% test). The following machine learning methods are used:<br>
+### Models
+The following machine learning methods are used:<br>
 1. **Logistic Regression (Regression)** - Fields: [```arrival_date_week_number```, ```arrival_date_month```, ```deposit_type```]<br>
   Logistic regression is a type of supervised learning classification algorithm which is used for predicting the probability of a target variable. The nature of target or dependent variable is binary, which means there can be only two classes. The variable"deposit_type" contains two types of observations - which is either "no deposit" or "non-refundable".
   
@@ -157,14 +151,28 @@ First, train-test split procedure is applied on dataset (75% training and 25% te
     The model performance initially came out to be 98%, proving to be overfitting, therefore, after making effective use of the model with recursive feature elimination, made the model come down to approxiamately 94%, which was neither overfitting nor under-fitting.
 
 2. **Neural Network**<br>
-**Compiling, Training, and Evaluating the model**
-   - The two hidden layers are used for the neural network model. The first and second hidden layers contain 100 and 50 neurons, respectively. The output layer contains a single neuron (binary classification problem).
+**Building, Training, and Evaluating the model**
+   - Train-test split procedure is applied on dataset (75% training and 25% test).
+   - The three hidden layers are used for the neural network model. The first, second, and third hidden layers contain 100, 60, and 35 neurons, respectively. The output layer contains a single neuron (binary classification problem).
    - The relu activation function is used for hidden layers as it provides better accuracy. For the output layer, the sigmoid function is used.
-   - The model is trained using 100 epochs.
+   - The model is trained using 200 epochs.
    - The binary cross entropy is used for the loss function as this function is appropriate for binary classification.
    - The adam optimizer is used as an optimizer.
-   - To evaluate the machine learning algorithm the 10-fold cross-validation is used.
-   - The accuracy of 93% is obtained from our deep learning model.
+   - The accuracy of 94.01% is obtained from our deep learning model.<br>
+ 
+ Following figures represent trainig and validation loss and validation.
+
+ <p img align="center" width="100%">
+<img width="350" alt="train_val_loss" src="https://user-images.githubusercontent.com/85843401/143810045-ee726ec2-6716-41eb-8a16-ca17983213f1.png">
+<img width="350" alt="train_val_accuracy" src="https://user-images.githubusercontent.com/85843401/143810114-0224f14a-fc2f-4a45-b023-0613e7c711e5.png"> 
+<p align="center">
+</p>
+
+The prediction result of the deep learning model is as follows:
+ <p img align="center" width="100%">
+<img width="400" alt="Screen Shot 2021-11-28 at 9 18 40 PM" src="https://user-images.githubusercontent.com/85843401/143812066-4cdf632b-d128-4f44-8af7-088eae32bd29.png">
+<p align="center">
+</p>
 
 3. **Random Forest (Tree-based)**<br>
   Random Forest is a machine learning algorithm which is used to solve problems related to regression and classification. It uses the Ensemble learning technique which solves complexity of the problems by the combination of classifiers, thus, improving the accuracy.<br>
@@ -227,5 +235,5 @@ This project shows that about 37% of the bookings were canceled. This informatio
 - Snigdha Kundu  
 Our team communicates via messaging in Slack. We also have regular zoom meetings at least twice a week to discuss project status and clarify each member's responsibilities.
 
-Presentation Link:
-https://docs.google.com/presentation/d/1EV7a8vf5qAvJWqqaAbC-Qyj0sDApTnZGS-sbxHzDKdg/edit#slide=id.g101b7c7e2a2_0_228
+Link to
+[google presentation](https://docs.google.com/presentation/d/1EV7a8vf5qAvJWqqaAbC-Qyj0sDApTnZGS-sbxHzDKdg/edit#slide=id.g101b7c7e2a2_0_228)
