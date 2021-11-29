@@ -105,12 +105,6 @@ The reason why the Postgres database hosted on the cloud, so it can be accessed 
 ## Machine Learning
 In this project, we are trying to predict the probability of a booked reservation being cancelled using the historic data collected of the hotel reservations. There are 2 outcomes expected (0 or 1).
 
-### Preprocessing
-- Split reservation_status_date to day, month and year.<br>
-- Separate the categorical variables from others.<br>
-- Replace null values by "undefined" in categorical variables and by zero in other variables.<br>
-- Applied OneHotEncoder on categorical variables.<br>
-
 ### Models
 The following machine learning methods are used:<br>
 1. **Logistic Regression (Regression)** - Fields: [```arrival_date_week_number```, ```arrival_date_month```, ```deposit_type```]<br>
@@ -149,16 +143,24 @@ The following machine learning methods are used:<br>
 
     #### Conclusion:
     The model performance initially came out to be 98%, proving to be overfitting, therefore, after making effective use of the model with recursive feature elimination, made the model come down to approxiamately 94%, which was neither overfitting nor under-fitting.
+    
 
-2. **Neural Network**<br>
-**Building, Training, and Evaluating the model**
-   - Train-test split procedure is applied on dataset (75% training and 25% test).
-   - The three hidden layers are used for the neural network model. The first, second, and third hidden layers contain 100, 60, and 35 neurons, respectively. The output layer contains a single neuron (binary classification problem).
-   - The relu activation function is used for hidden layers as it provides better accuracy. For the output layer, the sigmoid function is used.
-   - The model is trained using 200 epochs.
-   - The binary cross entropy is used for the loss function as this function is appropriate for binary classification.
-   - The adam optimizer is used as an optimizer.
-   - The accuracy of 94.01% is obtained from our deep learning model.<br>
+2. **Neural Network**
+
+#### - Preprocessing
+  - Split reservation_status_date to day, month and year.
+  - Separate the categorical variables from others.
+  - Replace null values by "undefined" in categorical variables and by zero in other variables.
+  - Applied OneHotEncoder on categorical variables.
+
+#### - Building, Training, and Evaluating the model
+  - Train-test split procedure is applied on dataset (75% training and 25% test).
+  - The three hidden layers are used for the neural network model. The first, second, and third hidden layers contain 100, 60, and 35 neurons, respectively. The output layer contains a single neuron (binary classification problem).
+  - The relu activation function is used for hidden layers as it provides better accuracy. For the output layer, the sigmoid function is used.
+  - The model is trained using 200 epochs.
+  - The binary cross entropy is used for the loss function as this function is appropriate for binary classification.
+  - The adam optimizer is used as an optimizer.
+  - The accuracy of 94.01% is obtained from our deep learning model.<br>
  
  Following figures represent trainig and validation loss and validation.
 
