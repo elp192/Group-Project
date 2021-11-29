@@ -215,7 +215,7 @@ Hence, the cancellation of hotel bookings can be predicted with utmost precision
 <br>
 
 ## Final Conclusions
-(To be done later)
+This project shows that about 37% of the bookings were canceled. This information can be helpful for hotel staff and would allow them to over-book for busy times, such as July and August, and maximize their revenue. 
 <br>
 
 ## Collaborators and Communication Protocols 
