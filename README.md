@@ -17,7 +17,8 @@ The preprocessing of the data includes:
 ### 1. Logistic Regression (Regression) - Fields: ["arrival_date_week_number", "arrival_date_month", "deposit_type"]
 Logistic regression is a type of supervised learning classification algorithm which is used for predicting the probability of a target variable. The nature of target or dependent variable is binary, which means there can be only two classes. The variable"deposit_type" contains two types of observations - which is either "no deposit" or "non-refundable".
 
-#### Splitting Data into Training (70%) and Test (30%) Sets
+#### Training and Testing Model
+##### Splitting Data into Training (70%) and Test (30%) Sets
 We make training and test sets to make sure that after we train our classification algorithm, it is able to generalize well to new data
 
      from sklearn.model_selection import train_test_split
